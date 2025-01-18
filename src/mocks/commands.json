@@ -1,0 +1,81 @@
+{
+  "Títulos": [
+    { "name": "Título", "code": "# Este es un título\n" },
+    { "name": "Subtítulo", "code": "## Este es un subtítulo\n" },
+    { "name": "Subsubtítulo", "code": "### Este es un subsubtítulo\n" }
+  ],
+  "Texto": [
+    { "name": "Lista", "code": "- Elemento 1\n- Elemento 2\n- Elemento 3\n" },
+    {
+      "name": "Lista ordenada",
+      "code": "1. Primer elemento\n2. Segundo elemento\n"
+    },
+    { "name": "Cita", "code": "> Este es un bloque de cita\n" },
+    { "name": "Negrita", "code": "**Texto en negrita**\n" },
+    { "name": "Cursiva", "code": "*Texto en cursiva*\n" },
+    { "name": "Enlace", "code": "[Texto del enlace](https://ejemplo.com)\n" },
+    { "name": "Enlace interno", "code": "[Ir a la sección](#seccion)\n" },
+    { "name": "Código en línea", "code": "`console.log('Hola, mundo')`\n" }
+  ],
+  "Medios": [
+    {
+      "name": "Imagen",
+      "code": "![Alt Text](https://via.placeholder.com/150)\n"
+    },
+    {
+      "name": "Video",
+      "code": "![Video](https://via.placeholder.com/640x360.mp4)\n"
+    },
+    {
+      "name": "Audio",
+      "code": "![Audio](https://via.placeholder.com/audio.mp3)\n"
+    },
+    {
+      "name": "Enlace externo",
+      "code": "[Texto del enlace](https://ejemplo.com)\n"
+    }
+  ],
+  "Código": [
+    {
+      "name": "Bloque de Código",
+      "code": "```\nconsole.log('Hola, mundo');\n```\n"
+    },
+    {
+      "name": "Bloque de Código con lenguaje",
+      "code": "```javascript\nconsole.log('Hola, mundo');\n```\n"
+    },
+    {
+      "name": "Bloque de Código con múltiples líneas",
+      "code": "```\nfunction saludo() {\n  console.log('Hola');\n}\n```"
+    }
+  ],
+  "Tablas": [
+    {
+      "name": "Tabla básica",
+      "code": "| Cabecera 1 | Cabecera 2 |\n|------------|------------|\n| Fila 1     | Fila 1     |\n| Fila 2     | Fila 2     |\n"
+    },
+    {
+      "name": "Tabla con alineación",
+      "code": "| Alineado a la izquierda | Alineado al centro | Alineado a la derecha |\n|:----------------------|:------------------:|---------------------:|\n| Fila 1               | Fila 1             | Fila 1               |\n| Fila 2               | Fila 2             | Fila 2               |\n"
+    }
+  ],
+  "Listas": [
+    { "name": "Lista no ordenada", "code": "- Item 1\n- Item 2\n- Item 3\n" },
+    { "name": "Lista ordenada", "code": "1. Primer item\n2. Segundo item\n" }
+  ],
+  "Otros": [
+    {
+      "name": "Salto de línea",
+      "code": "Texto sin salto de línea\nTexto con salto de línea\n\n"
+    },
+    { "name": "Horizontal Rule", "code": "---\n" },
+    {
+      "name": "Escapando caracteres especiales",
+      "code": "\\*Escapando asterisco\\*\n"
+    },
+    {
+      "name": "HTML en Markdown",
+      "code": "<div>Este es un div en HTML</div>\n"
+    }
+  ]
+}
