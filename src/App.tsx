@@ -1,4 +1,5 @@
 import React from "react";
+import { Toaster } from "sonner";
 import Catalog from "./components/Catalog";
 import Keboard from "./components/Command";
 import Editor from "./components/Editor";
@@ -35,7 +36,7 @@ const App: React.FC = () => {
   useChangeTheme();
   return (
     <>
-      <div className="flex h-screen bg-gray-100 dark:bg-gray-800">
+      <div className="flex h-screen bg-gray-100 dark:bg-slate-800">
         <Catalog
           componentsCatalog={componentsCatalog}
           expandedSections={expandedSections}
@@ -63,6 +64,7 @@ const App: React.FC = () => {
       </div>
       <Keboard />
       <Themes />
+      <Toaster richColors />
     </>
   );
 };
