@@ -1,7 +1,7 @@
 import React from "react";
 import { Toaster } from "sonner";
 import Catalog from "./components/Catalog";
-import Keboard from "./components/Command";
+import KeyboardShortcut from "./components/Command";
 import Editor from "./components/Editor";
 import Preview from "./components/Preview";
 import Themes from "./components/Themes";
@@ -62,7 +62,7 @@ const App: React.FC = () => {
         />
         <Preview markdown={markdown} />
       </div>
-      <Keboard />
+      <KeyboardShortcut markdown={markdown} />
       <Themes />
       <Toaster richColors />
     </>

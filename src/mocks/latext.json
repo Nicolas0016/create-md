@@ -1,0 +1,107 @@
+{
+  "Títulos": [
+    { "name": "Título", "code": "\\section{Este es un título}" },
+    { "name": "Subtítulo", "code": "\\subsection{Este es un subtítulo}" },
+    {
+      "name": "Subsubtítulo",
+      "code": "\\subsubsection{Este es un subsubtítulo}"
+    }
+  ],
+  "Listas": [
+    {
+      "name": "Lista Numerada",
+      "code": "\\begin{enumerate}\n  \\item Elemento 1\n  \\item Elemento 2\n  \\item Elemento 3\n\\end{enumerate}"
+    },
+    {
+      "name": "Lista con Viñetas",
+      "code": "\\begin{itemize}\n  \\item Elemento 1\n  \\item Elemento 2\n  \\item Elemento 3\n\\end{itemize}"
+    },
+    {
+      "name": "Lista Descriptiva",
+      "code": "\\begin{description}\n  \\item[Término 1] Descripción del término 1\n  \\item[Término 2] Descripción del término 2\n\\end{description}"
+    }
+  ],
+  "Tablas": [
+    {
+      "name": "Tabla Básica",
+      "code": "\\begin{tabular}{|c|c|}\n  \\hline\n  Columna 1 & Columna 2 \\\\\n  \\hline\n  Dato 1 & Dato 2 \\\\\n  \\hline\n\\end{tabular}"
+    },
+    {
+      "name": "Tabla con Cabecera",
+      "code": "\\begin{tabular}{|l|c|r|}\n  \\hline\n  Izquierda & Centro & Derecha \\\\\n  \\hline\n  Valor 1 & Valor 2 & Valor 3 \\\\\n  \\hline\n\\end{tabular}"
+    }
+  ],
+  "Ecuaciones": [
+    {
+      "name": "Ecuación Aislada",
+      "code": "\\begin{equation}\n  E = mc^2\n\\end{equation}"
+    },
+    { "name": "Ecuación en Línea", "code": "$E = mc^2$" },
+    {
+      "name": "Sistema de Ecuaciones",
+      "code": "\\begin{align}\n  x + y &= 1 \\\\\n  2x - y &= 3\n\\end{align}"
+    }
+  ],
+  "Gráficos": [
+    {
+      "name": "Incluir Imagen",
+      "code": "\\includegraphics[width=\\textwidth]{ruta_a_la_imagen}"
+    },
+    {
+      "name": "Figura con Pie",
+      "code": "\\begin{figure}[h]\n  \\centering\n  \\includegraphics[width=0.5\\textwidth]{ruta_a_la_imagen}\n  \\caption{Pie de imagen}\n\\end{figure}"
+    }
+  ],
+  "Citas y Referencias": [
+    {
+      "name": "Cita",
+      "code": "\\cite{clave_bibliográfica}"
+    },
+    {
+      "name": "Bibliografía",
+      "code": "\\begin{thebibliography}{99}\n  \\bibitem{clave_bibliográfica} Autor, Título, Año.\n\\end{thebibliography}"
+    }
+  ],
+  "Enlaces": [
+    {
+      "name": "Enlace",
+      "code": "\\href{https://www.example.com}{Texto del enlace}"
+    },
+    { "name": "URL Simple", "code": "\\url{https://www.example.com}" }
+  ],
+  "Código": [
+    {
+      "name": "Bloque de Código",
+      "code": "\\begin{verbatim}\n  Aquí va el código\n\\end{verbatim}"
+    },
+    {
+      "name": "Código con Listings",
+      "code": "\\begin{lstlisting}[language=Python]\n# Esto es un ejemplo de código Python\ndef hola():\n    print(\"Hola, mundo\")\n\\end{lstlisting}"
+    }
+  ],
+  "Estructura": [
+    {
+      "name": "Documento Básico",
+      "code": "\\documentclass{article}\n\\usepackage[utf8]{inputenc}\n\\title{Título del Documento}\n\\author{Autor}\n\\date{\\today}\n\n\\begin{document}\n\\maketitle\n\\section{Introducción}\nContenido de la introducción.\n\\end{document}"
+    }
+  ],
+  "Personalización de Texto": [
+    { "name": "Negrita", "code": "\\textbf{Texto en negrita}" },
+    { "name": "Cursiva", "code": "\\textit{Texto en cursiva}" },
+    { "name": "Subrayado", "code": "\\underline{Texto subrayado}" }
+  ],
+  "Otros": [
+    {
+      "name": "Comentarios",
+      "code": "% Esto es un comentario y no se muestra en el documento"
+    },
+    {
+      "name": "Pie de Página",
+      "code": "Texto con pie de página\\footnote{Este es un pie de página.}"
+    },
+    {
+      "name": "Índice",
+      "code": "\\tableofcontents"
+    }
+  ]
+}

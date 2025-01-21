@@ -1,10 +1,9 @@
 import { useEffect } from "react";
 import { copyMarkdown } from "../hooks/useCommand";
-import useMarkdownContext from "../hooks/useMarkdownContext";
-
-export default function KeyboardShortcut() {
-  const { markdown } = useMarkdownContext(); // Usa el contexto aquí
-
+interface Props {
+  markdown: string;
+}
+export default function KeyboardShortcut({ markdown }: Props) {
   useEffect(() => {
     const handleKeyDown = (event: KeyboardEvent) => {
       if (event.ctrlKey && event.key.toLowerCase() === "k") {

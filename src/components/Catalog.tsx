@@ -25,11 +25,13 @@ const Catalog: React.FC<CatalogProps> = ({
       <h2 className="text-xl font-semibold mb-4 text-gray-900 top-0 dark:text-white  ">
         Catálogo de Componentes
       </h2>
+
       {Object.keys(componentsCatalog).map((section) => (
         <div key={section} className="mb-4">
           <button
-            className="w-full text-left px-4 py-2 bg-gray-300 hover:bg-gray-300 rounded-lg font-semibold dark:bg-gray-700 dark:hover:bg-gray-700 dark:text-white"
+            className="w-full text-left px-4 py-2 bg-gray-300 hover:bg-gray-400 rounded-lg font-semibold dark:bg-gray-700 dark:hover:bg-gray-600 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
             onClick={() => handleToggleSection(section)}
+            aria-controls={`section-${section}`} // Relaciona el botón con el contenido controlado
           >
             {section}
           </button>
