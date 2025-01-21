@@ -21,7 +21,10 @@ interface ComponentsCatalog {
 
 const App: React.FC = () => {
   const { markdown, updateMarkdown, undo, redo } = useMarkdownHistory(
-    "## ¡Hola Mundo!\n\nEscribe algo aquí..."
+    `# Bienvenido a la Aplicación de Markdown
+---
+Esta aplicación permite visualizar el contenido de un archivo Markdown en tiempo real, utilizando diferentes componentes para formatear el texto y mostrar contenido enriquecido como listas, tablas, citas y código.
+`
   );
   const { expandedSections, handleToggleSection } = useExpandedSections();
   const { handleDragStart, handleDrop, handleDragOver } =
